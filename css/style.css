@@ -11,6 +11,7 @@
 
 body {
   font-family: "Nunito", monospace, 'Montserrat', sans-serif;
+  background-color: black;
 }
 
 /* utility style  */
@@ -24,6 +25,9 @@ body {
 /* end utility classes */
 
 .container {
+  margin-top: 5%;
+  margin-inline: 5%;
+  border-radius: 1.5em;
   background-color: burlywood;
   background-image: url("../img/blue_white_3d_squares_creative_abstract_background_patterns_4k_hd_abstract-1366x768.jpg");
   background-repeat: no-repeat;
