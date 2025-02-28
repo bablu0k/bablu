@@ -1,25 +1,41 @@
 body {
   background-color: black;
-  margin: 0; /* Removes default margin */
-  overflow: hidden; /* Prevents scrolling */
-  height: 100vh; /* Ensures full viewport height */
+  margin: 0;
+  overflow: hidden;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white; /* Text color */
+  font-family: Arial, sans-serif;
+  text-align: center;
 }
+
+p {
+    color: whitesmoke;
+}
+
 
 @keyframes subtle-motion-heartbeat {
     0% { transform: translate(0px, 0px) rotate(0deg) scale(1); }
     20% { transform: translate(1px, -1px) rotate(0.3deg) scale(1); }
     40% { transform: translate(-1px, 1px) rotate(-0.3deg) scale(1); }
-    50% { transform: translate(0.5px, -0.5px) rotate(0.1deg) scale(1.05); } /* Softer heartbeat */
-    60% { transform: translate(0px, 0px) rotate(0deg) scale(1); } /* Back to normal */
-    80% { transform: translate(-0.5px, 0.5px) rotate(-0.1deg) scale(1.02); } /* Tiny secondary pulse */
+    50% { transform: translate(0.5px, -0.5px) rotate(0.1deg) scale(1.05); } /* Soft heartbeat */
+    60% { transform: translate(0px, 0px) rotate(0deg) scale(1); }
+    80% { transform: translate(-0.5px, 0.5px) rotate(-0.1deg) scale(1.02); }
     100% { transform: translate(0px, 0px) rotate(0deg) scale(1); }
 }
 
-.centered-image-container {
+.centered-container {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    height: 100vh;
+    gap: 15px; /* Spacing between image and text */
+}
+
+.centered-image, .animated-text {
+    animation: subtle-motion-heartbeat 3.5s infinite ease-in-out;
 }
 
 .centered-image {
@@ -28,8 +44,10 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 5px solid #333;
-    
-    /* Apply the merged animation */
-    animation: subtle-motion-heartbeat 3.5s infinite ease-in-out;
+}
+
+.animated-text {
+    font-size: 20px;
+    font-weight: bold;
 }
 
