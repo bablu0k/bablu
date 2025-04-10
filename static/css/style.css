@@ -16,6 +16,10 @@ p {
     color: whitesmoke;
 }
 
+a:link, a:visited, a:hover, a:active {
+    color: whitesmoke;
+    text-decoration: none;
+}
 
 @keyframes subtle-motion-heartbeat {
     0% { transform: translate(0px, 0px) rotate(0deg) scale(1); }
