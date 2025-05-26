@@ -12,6 +12,10 @@ body {
   text-align: center;
 }
 
+.browser-icon {
+    border-radius: 50%;
+}
+
 p {
     color: whitesmoke;
 }
